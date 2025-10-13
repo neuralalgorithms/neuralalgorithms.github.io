@@ -39,3 +39,38 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.author__avatar img {
+  border-radius: 0 !important;   // override circle
+  max-width: 175px;              // your size
+  @include breakpoint($large) {
+  padding: 0px;
+  border: 0px solid $border-color;
+}
+}
+
+// @media (min-width: 100em) {
+
+// .author__avatar {
+// display: table-cell;
+// vertical-align: top;
+// width: 36px; //original: 36px
+// height: 36px; //original: 36px
+
+// @include breakpoint($large) {
+// display: block;
+// width: 200px;
+// height: 200px;
+// }
+
+// img {
+// max-width: 175px; //original: 110px
+// border-radius: 0%;
+
+// @include breakpoint($large) {
+//   padding: 1px;
+//   border: 1px solid $border-color;
+// }
+// }
+// }
+// }

@@ -24,4 +24,10 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
   gem 'hawkins'
+  gem 'csv'            # <-- needed on Ruby 3.4+
+  gem 'webrick'        # recommended for Jekyll on Ruby 3+
 end
+
+gem "base64", "~> 0.3.0"
+
+gem "bigdecimal", "~> 3.3"

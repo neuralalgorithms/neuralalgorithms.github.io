@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "home"
+title                    : "research"
 title_separator          : "-"
-name                     : &name "kaushik lakshminarasimhan"
+name                     : &name "Neural Algorithms Lab"
 description              : &description "personal description"
-url                      : https://kaushik-l.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://neuralalgorithms.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "kaushik-l.github.io"
+repository               : "neuralalgorithmslab.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : Kaushik Lakshminarasimhan
-  avatar           : "kaushik.jpg"
+  name             : 
+  avatar           : "labwebsitephoto.gif"
   bio              : " "
-  # location         : "New York, NY"
-  employer         : Columbia University
+  # location         : "Dallas, TX"
+  employer         : University of Texas, Dallas
   pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=kaushik+lakshminarasimhan&sort=pubdate&sort_order=asc"
   biorxiv          : "https://www.biorxiv.org/search/%20author1%3AKaushik%2BLakshminarasimhan%20numresults%3A25%20sort%3Arelevance-rank"
   googlescholar    : "https://scholar.google.com/citations?user=nkZYEWQAAAAJ&hl=en"
-  email            : "jl5649@columbia.edu"
+  email            : "kaushik.laksh@utdallas.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -97,7 +97,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "kaushik-l"
+  github           : "neuralalgorithms"
   google_plus      :
   keybase          :
   instagram        :
