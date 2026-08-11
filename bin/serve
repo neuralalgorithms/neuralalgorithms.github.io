@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Serve the site locally at http://localhost:4000
+#
+# Usage: ./bin/serve            (any extra args are passed through to jekyll)
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+# Restore Object#tainted? for Liquid 4.0.3 before Jekyll loads. See bin/taint_shim.rb.
+export RUBYOPT="-r$(pwd)/bin/taint_shim ${RUBYOPT:-}"
+
+exec bundle exec jekyll serve \
+  --config _config.yml,_config.dev.yml \
+  --livereload \
+  "$@"

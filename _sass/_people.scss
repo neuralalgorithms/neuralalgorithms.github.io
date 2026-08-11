@@ -1,0 +1,91 @@
+/*
+   People
+   ==========================================================================
+   Bio on the left, portrait on the right. Deliberately does not reuse the
+   theme's .feature__item grid, which splits the row 5/12 image to 7/12 text
+   and leaves the bio column too narrow.
+*/
+
+.people-list {
+  margin-bottom: 2em;
+}
+
+.people-list__item {
+  /* Narrow screens: portrait stacks above the bio (the photo is the second
+     child in source order, so reversing puts it on top). */
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 3em;
+
+  &:last-child {
+    margin-bottom: 1em;
+  }
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    align-items: flex-start;
+
+    /* Every person gets the same slice of the page, so the gap between one
+       portrait and the next does not shrink with a shorter bio. Sized to the
+       longest bio; a longer one still pushes the row taller. */
+    min-height: 222px;
+  }
+}
+
+.people-list__body {
+  flex: 1 1 auto;
+  min-width: 0; /* let long words wrap instead of widening the flex item */
+
+  @include breakpoint($medium) {
+    padding-right: 2em;
+  }
+}
+
+.people-list__name,
+.people-list__section-title {
+  margin: 0 0 0.35em;
+  font-family: var(--heading-font);
+  font-size: $type-size-4;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.people-list__bio {
+  font-size: $type-size-5;
+  line-height: 1.7;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.people-list__section-title {
+  /* the shared rule above zeroes the top margin, which suits a person's name
+     but not a section heading following a bio */
+  margin-top: 2em;
+}
+
+.people-list__collaborators {
+  font-size: $type-size-5;
+  line-height: 1.9;
+}
+
+.people-list__photo {
+  flex: 0 0 auto;
+  margin-bottom: 1.5em;
+
+  @include breakpoint($medium) {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top; /* keep faces in frame when cropping */
+  }
+}

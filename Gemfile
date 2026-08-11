@@ -31,3 +31,12 @@ end
 gem "base64", "~> 0.3.0"
 
 gem "bigdecimal", "~> 3.3"
+
+# Formerly stdlib, no longer default gems on Ruby 3.4+/4.0 but still used by Jekyll 3.x
+gem "logger"
+gem "ostruct"
+gem "observer"
+gem "benchmark"
+gem "mutex_m"
+gem "drb"
+gem "abbrev"

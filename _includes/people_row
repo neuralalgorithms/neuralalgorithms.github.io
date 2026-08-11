@@ -1,0 +1,42 @@
+{% include base_path %}
+
+{% if include.id %}
+  {% assign people_row = page[include.id] %}
+{% else %}
+  {% assign people_row = page.people %}
+{% endif %}
+
+<div class="people-list">
+
+  {% for person in people_row %}
+
+    <div class="people-list__item">
+
+      <div class="people-list__body">
+        {% if person.title %}
+          <h2 class="people-list__name">{{ person.title }}</h2>
+        {% endif %}
+
+        {% if person.excerpt %}
+          <div class="people-list__bio">
+            {{ person.excerpt | markdownify }}
+          </div>
+        {% endif %}
+      </div>
+
+      {% if person.image_path %}
+        <div class="people-list__photo">
+          <img src=
+            {% if person.image_path contains "://" %}
+              "{{ person.image_path }}"
+            {% else %}
+              "{{ person.image_path | prepend: "/images/" | prepend: base_path }}"
+            {% endif %}
+          alt="{% if person.alt %}{{ person.alt }}{% endif %}">
+        </div>
+      {% endif %}
+
+    </div>
+  {% endfor %}
+
+</div>

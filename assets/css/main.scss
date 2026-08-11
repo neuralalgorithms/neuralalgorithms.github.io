@@ -10,6 +10,7 @@
  *
 */
 
+
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
@@ -32,6 +33,7 @@
 
 @import "page";
 @import "archive";
+@import "people";
 @import "sidebar";
 
 @import "vendor/font-awesome/fontawesome";
@@ -43,34 +45,225 @@
 .author__avatar img {
   border-radius: 0 !important;   // override circle
   max-width: 175px;              // your size
+  filter: invert(1);             // "Inverse" scheme; drop this line for the original colors
   @include breakpoint($large) {
   padding: 0px;
   border: 0px solid $border-color;
 }
 }
 
-// @media (min-width: 100em) {
+/* Bold the top nav tabs. */
+nav.greedy-nav .visible-links a,
+nav.greedy-nav .hidden-links a {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
 
-// .author__avatar {
-// display: table-cell;
-// vertical-align: top;
-// width: 36px; //original: 36px
-// height: 36px; //original: 36px
+/* Make names on People page smaller */
+.page__content h2.archive__item-title {
+  font-size: 1.25rem !important;      /* try 0.95rem or 0.9rem for smaller */
+  font-weight: 600 !important;     /* semibold instead of bold */
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
 
-// @include breakpoint($large) {
-// display: block;
-// width: 200px;
-// height: 200px;
+/* Typography: Bitter (the slab serif mattarlab.com uses for its running text)
+   applied site-wide -- body copy, headings, nav and sidebar alike. To go back
+   to a two-font pairing, point --heading-font at another family here and
+   add it to the Google Fonts link in _includes/head.html. */
+:root {
+  --body-font: 'Bitter', Georgia, 'Times New Roman', serif;
+  --heading-font: var(--body-font);
+
+  /* kept so any older rule referencing --main-font still resolves */
+  --main-font: var(--body-font);
+}
+
+html, body, button, input, select, textarea {
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title, .archive__item-title,
+.site-title, .site-subtitle {
+  font-family: var(--heading-font);
+}
+
+/* Header (masthead/nav) */
+.masthead,
+.masthead * ,
+nav.greedy-nav,
+nav.greedy-nav * ,
+.site-title {
+  font-family: var(--heading-font) !important;
+}
+
+/* Left column / sidebar (TOC, nav, meta) */
+.sidebar,
+.sidebar * ,
+.page__sidebar,
+.page__sidebar * ,
+.nav__list,
+.nav__list * {
+  font-family: var(--heading-font) !important;
+}
+
+/* Author name/bio in the sidebar reads better in the body serif */
+.author__name,
+.author__bio {
+  font-family: var(--body-font) !important;
+}
+
+/* Restore Font Awesome for icons so they render correctly */
+.fas, .far, .fal, .fa-solid, .fa-regular { 
+  font-family: "Font Awesome 6 Free","Font Awesome 5 Free" !important; 
+}
+.fab, .fa-brands { 
+  font-family: "Font Awesome 6 Brands","Font Awesome 5 Brands" !important; 
+}
+/* legacy catch-all just in case */
+.fa { font-family: "Font Awesome 6 Free","Font Awesome 5 Free","Font Awesome 5 Brands" !important; }
+
+/* Make sure Academicons keep their own font */
+.ai, .academicons, [class^="ai-"], [class*=" ai-"] {
+  font-family: "Academicons" !important;
+  font-weight: 400 !important;
+}
+
+/* Sidebar icon sizing/alignment */
+.page__sidebar .ai {
+  font-size: 1.2rem;      /* tweak: 1.15rem, 1.25rem, etc. */
+  line-height: 1;         /* keeps icon vertically tight */
+  vertical-align: middle; /* aligns with text baseline */
+}
+
+/* ==== UNIVERSAL SPACING FOR ACADEMICON LINKS ==== */
+
+/* 1) For any <a> that directly contains an <i class="ai …">,
+      turn the link into a tiny flex row and add gap. */
+a > i.ai {
+  /* ensure the icon itself doesn’t collapse spacing */
+  margin-right: 0 !important;
+  line-height: 1;
+  vertical-align: middle;
+}
+a:has(> i.ai) {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.3rem !important;     /* ← adjust spacing here */
+  line-height: 1.2 !important;
+}
+
+/* 2) If :has() isn’t supported by the browser,
+      fall back to class-scoped anchors commonly used by MM. */
+.page__sidebar a > i.ai,
+.masthead a > i.ai,
+.footer a > i.ai {
+  margin-right: 0.3rem !important;  /* fallback spacing */
+}
+
+/* 3) Neutralize fixed-width if it sneaks back in */
+i.ai.ai-fw { width: auto !important; text-align: left !important; }
+
+/* --- Increase space between header tabs --- */
+nav.greedy-nav a {
+  margin: 0 2rem !important;   /* ← bump this to taste */
+}
+
+/* Keep edges neat (no extra space at ends) */
+nav.greedy-nav .visible-links li:first-child a { margin-left: 0 !important; }
+nav.greedy-nav .visible-links li:last-child  a { margin-right: 0 !important; }
+
+body {
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Bitter has a real 700, so no synthetic-bold thickening needed. */
+strong, b {
+  font-weight: 700;
+}
+
+/* Match the type SCALE of mattarlab.com, not just the typeface. Minimal
+   Mistakes bumps the root to 18px at $medium and up, which renders body copy
+   noticeably larger and darker than the reference sites. Mattar sets running
+   text at 12pt (16px) / 1.6 in rgb(33,33,33); pin the same here. Sizes are in
+   px so the theme's em-based heading scale shrinks proportionally with it. */
+.page__content,
+.page__content p,
+.page__content li,
+.archive__item-excerpt,
+.people-list__bio,
+.author__bio {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212121;
+}
+
+/* Headings sit closer to their text and stay a touch tighter than the
+   theme default, matching the reference sites' heading rhythm.
+   The people list owns its own vertical rhythm in _people.scss -- excluded
+   here because `.page__content h2` would otherwise outrank `.people-list__name`
+   and push each person's text block below the top of their portrait. */
+.page__content h1:not([class*="people-list__"]),
+.page__content h2:not([class*="people-list__"]),
+.page__content h3:not([class*="people-list__"]),
+.page__content h4:not([class*="people-list__"]) {
+  line-height: 1.25;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+// /* Force smaller portraits for any image served from /people/ */
+// .page__content img[src*="/people/"] {
+//   width: 175px !important;     /* adjust to taste */
+//   max-width: 175px !important;
+//   height: auto !important;
+//   display: block;
 // }
 
-// img {
-// max-width: 175px; //original: 110px
-// border-radius: 0%;
+// /* Put at the END of assets/css/main.scss, then rebuild */
+// .page__content .feature__item .archive__item-teaser {
+//   background-size: cover !important;          /* fill box, crop evenly */
+//   background-position: center center !important;
+//   background-repeat: no-repeat !important;
 
-// @include breakpoint($large) {
-//   padding: 1px;
-//   border: 1px solid $border-color;
+//   width: 175px !important;
+//   height: 175px !important;
+//   flex: 0 0 175px !important;
 // }
+
+// .page__content .feature__item .feature__image img {
+//   width: 175px !important; height: 175px !important;
+//   object-fit: cover; object-position: center;
+//   display: block;
 // }
+
+// /* Make ANY feature_row teaser a small, centered square portrait */
+// .page__content .feature__item .archive__item-teaser,
+// .page__content .feature__item .feature__image,
+// .page__content .archive__item-teaser,
+// .archive__item-teaser,
+// .feature__image,
+// .page__content [style*="background-image"] {
+//   width: 175px !important;
+//   height: 175px !important;
+//   flex: 0 0 175px !important;
+
+//   /* ensure the picture fills properly even if it's a background on a DIV */
+//   background-size: cover !important;
+//   background-position: center center !important;
+//   background-repeat: no-repeat !important;
+
+//   /* if it’s an <img>, make it fit the box */
+//   display: block;
 // }
+
+// /* Title smaller + bold, tighter to excerpt */
+// .page__content h2.archive__item-title {
+//   font-weight: 600 !important;
+//   font-size: 0.95rem !important;
+//   line-height: 1.2 !important;
+//   margin: 0 0 0.15rem !important;   /* tighten title→excerpt gap */
 // }

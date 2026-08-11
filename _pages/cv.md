@@ -1,4 +1,6 @@
 ---
+noindex: true
+sitemap: false
 layout: archive
 title: "CV"
 permalink: /cv/
