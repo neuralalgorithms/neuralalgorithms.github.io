@@ -27,7 +27,7 @@ Belief embodiment through eye movements facilitates memory-guided navigation.\
 
 K Lakshminarasimhan (2024).\
 A Computational Principle of Habit Formation.\
-*bioRxiv*, 10.1101/2024.10.12.618033 <small>[pdf](/files/2024 HabitFormation.pdf) | [link](https://www.biorxiv.org/content/10.1101/2024.10.12.618033v1.full)</small> 🟢 🔵
+*bioRxiv*, 10.1101/2024.10.12.618033 <small>[pdf](/files/2024 HabitFormation.pdf) | [link](https://www.biorxiv.org/content/10.1101/2024.10.12.618033v1.full)</small> 🔵 🟢
 
 K Lakshminarasimhan, M Xie, J Cohen, B Sauerbrei, A Hantman, A Litwin-Kumar\* & S Escola\* (2024).\
 Specific Connectivity Optimizes Learning in Thalamocortical Loops.\
