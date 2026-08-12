@@ -19,7 +19,7 @@ author_profile: true
 
 K Lakshminarasimhan\*, J Buck\*, A Torres-Herraez, C Kellendonk, G Horga (2025).\
 A Corticostriatal Learning Mechanism Linking Excess Striatal Dopamine and Auditory Hallucinations.\
-*bioRxiv*, 10.1101/2025.03.18.643990 <small>[pdf](/files/2025 DopamineHallucinations.pdf) | [link](https://www.biorxiv.org/content/10.1101/2025.03.18.643990v2)</small> 🔵
+*bioRxiv*, 10.1101/2025.03.18.643990 <small>[pdf](/files/2025 DopamineHallucinations.pdf) | [link](https://www.biorxiv.org/content/10.1101/2025.03.18.643990v2)</small> 🔵 🟢
 
 A Stavropoulos\*, K Lakshminarasimhan\* & D Angelaki (2025).\
 Belief embodiment through eye movements facilitates memory-guided navigation.\
