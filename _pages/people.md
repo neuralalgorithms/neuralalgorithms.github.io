@@ -32,7 +32,7 @@ team:
 {: .people-list__section-title}
 
 <div class="people-list__collaborators">
-  Meng He (PhD - Statistics), Shayaan Zari (undergrad - CS), Krishna Bhatia (masters - Applied Cognition and Neuroscience), Zareen Spriha (undergrad - CS)
+  Meng He (PhD - Statistics), Shayaan Zari (undergrad - Computer Science), Krishna Bhatia (masters - Applied Cognition and Neuroscience), Zareen Spriha (undergrad - Computer Science)
 </div>
 
 ## Collaborators
