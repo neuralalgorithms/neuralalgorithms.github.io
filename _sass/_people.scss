@@ -80,6 +80,13 @@
     margin-bottom: 0;
   }
 
+  @include breakpoint($large) {
+    /* The page reserves an empty gutter on its right (.page suffix 2 of 12).
+       Push the portraits into part of it so the bios gain line width without
+       the photos getting any smaller. */
+    margin-right: -3em;
+  }
+
   img {
     display: block;
     width: 200px;
