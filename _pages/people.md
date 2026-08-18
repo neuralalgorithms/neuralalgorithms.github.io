@@ -22,7 +22,7 @@ team:
   - image_path: people/navi.jpeg
     alt: Jahnavi Lanka
     title: "Jahnavi Lanka (Research assistant)"
-    excerpt: "(joint with Anila D&rsquo;Mello) Jahnavi is a dual masters student in Applied Cognition/Neuroscience and Philosophy. She is currently building computational models to categorize pragmatic and semantic aspects of social language in children with ASD. She also studies the effects of musical structure on motor fluidity in Parkinson&rsquo;s disease. Broadly, she is interested in developing personalized research methods for psychiatry. Outside of research, she writes about the philosophy of cognitive science."
+    excerpt: "(joint with [Anila D&rsquo;Mello](https://www.dmellolab.com/)) Jahnavi is a dual masters student in Applied Cognition/Neuroscience and Philosophy. She is currently building computational models to categorize pragmatic and semantic aspects of social language in children with ASD. She also studies the effects of musical structure on motor fluidity in Parkinson&rsquo;s disease. Broadly, she is interested in developing personalized research methods for psychiatry. Outside of research, she writes about the philosophy of cognitive science."
 ---
 
 {% include people_row id="team" %}
