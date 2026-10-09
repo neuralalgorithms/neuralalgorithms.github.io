@@ -1,0 +1,42 @@
+# ACN/HCS 6328 schedule for /teaching/acn6328/. Leave out any material not posted yet.
+- topic: Introduction
+  slides: /files/acn6328/week01_session1.html
+  readings:
+    - label: Lengyel 2024
+      url: /files/acn6328/lengyel-2024.pdf
+    - label: Pillow 2024
+      url: /files/acn6328/pillow-2024.pdf
+    - label: Lengyel 2024 rebuttal
+      url: /files/acn6328/lengyel-2024-rebuttal.pdf
+- topic: Vocabulary
+  slides: /files/acn6328/week01_session2.html
+- topic: Primer on probability theory
+  slides: /files/acn6328/week02_session1.html
+- topic: Bayesian inference
+  slides: /files/acn6328/week02_session2.html
+  code: https://colab.research.google.com/drive/159SjilpTe5pWkLzTxjLXq1AZ1tRAumdy
+  reading: /files/acn6328/vilares-kording-2011.pdf
+- topic: Model-free reinforcement learning
+  slides: /files/acn6328/week04_session1.html
+  code: https://colab.research.google.com/drive/12RMmXVm-WV5pq6A7MmFZhU1j77CuwhG5
+  reading: /files/acn6328/daw-tobler-2014.pdf
+- topic: Model-based reinforcement learning
+  slides: /files/acn6328/week05_session1.html
+  code: https://colab.research.google.com/drive/1XsYZTD3ms2jEqQvA35o6otdgPJ-S5lcD
+  reading: /files/acn6328/daw-2012.pdf
+- topic: Primer on linear algebra
+  slides: /files/acn6328/week06_session1.html
+- topic: Neural coding
+  slides: /files/acn6328/week06_session2.html
+  code: https://colab.research.google.com/drive/1vPkvtSWcOEj0wNQQifr2DEpt8KFEx58X
+  reading: /files/acn6328/averbeck-latham-pouget-2006.pdf
+- topic: Representational geometry
+  slides: /files/acn6328/week07_session1.html
+  reading: /files/acn6328/dicarlo-cox-2007.pdf
+- topic: Neural dimensionality
+- topic: Primer on calculus
+- topic: Synaptic plasticity
+- topic: Feedforward neural networks
+- topic: Recurrent neural networks
+- topic: Recap and miscellaneous topics
+- topic: Student-led paper discussions
