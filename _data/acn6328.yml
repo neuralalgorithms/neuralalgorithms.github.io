@@ -1,12 +1,12 @@
 # ACN/HCS 6328 schedule for /courses/. Leave out any material not posted yet.
-- topic: Introduction
+- topic: Overview
   slides: /files/acn6328/week01_session1.html
   readings:
-    - label: Lengyel 2024
+    - label: reading 1
       url: /files/acn6328/lengyel-2024.pdf
-    - label: Pillow 2024
+    - label: reading 2
       url: /files/acn6328/pillow-2024.pdf
-    - label: Lengyel 2024 rebuttal
+    - label: reading 3
       url: /files/acn6328/lengyel-2024-rebuttal.pdf
 - topic: Vocabulary
   slides: /files/acn6328/week01_session2.html
