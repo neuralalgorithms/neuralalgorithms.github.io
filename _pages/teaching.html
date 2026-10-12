@@ -7,4 +7,17 @@ permalink: /teaching/
 author_profile: true
 ---
 
-<b>Fall 2026</b> - ACN/HCS 6328 <a href="/teaching/acn6328/">Intro to Computational Neuroscience</a>
+<p><b>ACN/HCS 6328 Intro to Computational Neuroscience</b></p>
+
+{% assign n = 0 %}
+{% for s in site.data.acn6328 %}
+{% assign links = "" | split: "" %}
+{% if s.slides %}{% capture l %}<a href="{{ s.slides }}">slides</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+{% if s.code %}{% capture l %}<a href="{{ s.code }}">code</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+{% if s.reading %}{% capture l %}<a href="{{ s.reading }}">reading</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+{% for r in s.readings %}{% capture l %}<a href="{{ r.url }}">{{ r.label }}</a>{% endcapture %}{% assign links = links | push: l %}{% endfor %}
+{% capture entry %}{{ s.topic }}{% if links.size > 0 %} <small>{{ links | join: " | " }}</small>{% endif %}{% endcapture %}
+{% if s.topic contains "Primer" or s.topic contains "Recap" %}<span style="background: #eaeaea; padding: 0 6px; border-radius: 3px;">{{ entry }}</span><br>
+{% else %}{% assign n = n | plus: 1 %}{{ n }}. {{ entry }}<br>
+{% endif %}
+{% endfor %}
