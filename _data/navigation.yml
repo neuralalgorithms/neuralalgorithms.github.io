@@ -7,7 +7,7 @@ main:
     url: /publications/
 
   - title: "courses"
-    url: /teaching/
+    url: /courses/
 
   # - title: "abstracts/proceedings"
   #   url: /proceedings/
