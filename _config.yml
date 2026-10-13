@@ -85,7 +85,7 @@ author:
   bio              : " "
   # location         : "Dallas, TX"
   employer         : University of Texas, Dallas
-  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=kaushik+lakshminarasimhan&sort=pubdate&sort_order=asc"
+  pubmed           :
   biorxiv          : "https://www.biorxiv.org/search/%20author1%3AKaushik%2BLakshminarasimhan%20numresults%3A25%20sort%3Arelevance-rank"
   googlescholar    : "https://scholar.google.com/citations?user=nkZYEWQAAAAJ&hl=en"
   email            : "kaushik.laksh@utdallas.edu"
@@ -104,7 +104,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "https://orcid.org/0000-0003-3932-2616"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
