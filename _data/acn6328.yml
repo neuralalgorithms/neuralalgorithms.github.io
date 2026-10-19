@@ -36,6 +36,7 @@
   reading: /files/acn6328/dicarlo-cox-2007.pdf
 - topic: Neural dimensionality
   slides: /files/acn6328/week08_session1.html
+  code: https://colab.research.google.com/drive/1wkspbSLKhnpTHlsTRQzOeL_hUMxr6HlE
   reading: /files/acn6328/fusi-miller-rigotti-2016.pdf
 - topic: Primer on calculus
 - topic: Synaptic plasticity
