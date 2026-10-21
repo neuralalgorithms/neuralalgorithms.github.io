@@ -39,6 +39,7 @@
   code: https://colab.research.google.com/drive/1wkspbSLKhnpTHlsTRQzOeL_hUMxr6HlE
   reading: /files/acn6328/fusi-miller-rigotti-2016.pdf
 - topic: Primer on calculus
+  slides: /files/acn6328/week08_session2.html
 - topic: Synaptic plasticity
 - topic: Feedforward neural networks
 - topic: Recurrent neural networks
