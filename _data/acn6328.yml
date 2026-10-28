@@ -43,11 +43,7 @@
 - topic: Synaptic plasticity
   slides: /files/acn6328/week10_session1.html
   code: https://colab.research.google.com/drive/1pyajJ5ePhNaBziLx7f3C8eTCBybahD1l
-  readings:
-    - label: reading 1
-      url: /files/acn6328/dayan-abbott-ch8.pdf
-    - label: reading 2
-      url: /files/acn6328/fremaux-gerstner-2016.pdf
+  reading: /files/acn6328/dayan-abbott-ch8.pdf
 - topic: Feedforward neural networks
 - topic: Recurrent neural networks
 - topic: Recap and miscellaneous topics
