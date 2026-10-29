@@ -17,6 +17,10 @@ author_profile: true
 
 <hr style="border:1px solid gray">
 
+Y Wang, Z Lu, K Lakshminarasimhan (2026).\
+Coordinated Drift of Image Representations in Human EEG.\
+*bioRxiv*, 10.64898/2026.10.27.762314 <small>[pdf](/files/2026 EEGDrift.pdf) | [link](https://doi.org/10.64898/2026.10.27.762314)</small> 🔵 🟠
+
 K Lakshminarasimhan\*, J Buck\*, A Torres-Herraez, C Kellendonk, G Horga (2025).\
 A Corticostriatal Learning Mechanism Linking Excess Striatal Dopamine and Auditory Hallucinations.\
 *bioRxiv*, 10.1101/2025.03.18.643990 <small>[pdf](/files/2025 DopamineHallucinations.pdf) | [link](https://www.biorxiv.org/content/10.1101/2025.03.18.643990v2)</small> 🔵 🟢
