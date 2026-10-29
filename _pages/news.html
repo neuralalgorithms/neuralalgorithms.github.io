@@ -1,0 +1,12 @@
+---
+noindex: false
+sitemap: true
+layout: archive
+title: ""
+permalink: /news/
+author_profile: true
+---
+
+{% for e in site.data.news %}
+<p><b>{{ e.date }}</b> &nbsp; {{ e.text }}{% if e.link %} <small><a href="{{ e.link }}">link</a></small>{% endif %}</p>
+{% endfor %}
